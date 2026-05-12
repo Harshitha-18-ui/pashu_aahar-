@@ -1,0 +1,17 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Stylized Cow and Growth Icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,25c-12,0 -18,8 -18,18c0,10 4,22 18,22s18,-12 18,-22C72,33 66,25 54,25zM46,48c-1.5,0 -2.5,-1 -2.5,-2.5s1,-2.5 2.5,-2.5s2.5,1 2.5,2.5S47.5,48 46,48zM62,48c-1.5,0 -2.5,-1 -2.5,-2.5s1,-2.5 2.5,-2.5s2.5,1 2.5,2.5S63.5,48 62,48z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M36,38c-4,-4 -10,-2 -12,4c0,0 6,4 12,-4zM72,38c4,-4 10,-2 12,4c0,0 -6,4 -12,-4z" />
+    <!-- Wheat/Seedling to represent "Aahar" (Feed) -->
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M54,65c0,0 -8,5 -8,15c0,8 8,12 8,12s8,-4 8,-12C62,70 54,65 54,65z" />
+</vector>
