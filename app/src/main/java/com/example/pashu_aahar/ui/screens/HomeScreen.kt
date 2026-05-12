@@ -6,6 +6,7 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.Assignment
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -31,7 +32,25 @@ fun HomeScreen(
     onNavigateToMilkLog: () -> Unit,
     onNavigateToHealthLog: () -> Unit,
     onNavigateToCost: () -> Unit,
-    onNavigateToTips: () -> Unit
+    onNavigateToTips: () -> Unit,
+    onNavigateToHeatLog: () -> Unit,
+    onNavigateToBreedingLog: () -> Unit,
+    onNavigateToCalvingLog: () -> Unit,
+    onNavigateToWeightLog: () -> Unit,
+    onNavigateToExpenseLog: () -> Unit,
+    onNavigateToSalesLog: () -> Unit,
+    onNavigateToInventoryLog: () -> Unit,
+    onNavigateToLaborLog: () -> Unit,
+    onNavigateToWaterLog: () -> Unit,
+    onNavigateToManureLog: () -> Unit,
+    onNavigateToDiaryLog: () -> Unit,
+    onNavigateToDailyTaskLog: () -> Unit,
+    onNavigateToMovementLog: () -> Unit,
+    onNavigateToVetVisitLog: () -> Unit,
+    onNavigateToDewormingLog: () -> Unit,
+    onNavigateToInsuranceLog: () -> Unit,
+    onNavigateToMilkQualityLog: () -> Unit,
+    onNavigateToMilkCollectionLog: () -> Unit
 ) {
     val items = listOf(
         DashboardItem("Add Cow Profile", Icons.Default.Pets, MaterialTheme.colorScheme.primary, onNavigateToProfile),
@@ -40,6 +59,24 @@ fun HomeScreen(
         DashboardItem("Health Record", Icons.Default.MedicalInformation, MaterialTheme.colorScheme.primary, onNavigateToHealthLog),
         DashboardItem("Generate Feed", Icons.Default.Grass, MaterialTheme.colorScheme.primary, onNavigateToRecipe),
         DashboardItem("Cost Tracker", Icons.Default.CurrencyRupee, MaterialTheme.colorScheme.primary, onNavigateToCost),
+        DashboardItem("Heat Tracker", Icons.Default.Favorite, MaterialTheme.colorScheme.primary, onNavigateToHeatLog),
+        DashboardItem("Breeding", Icons.Default.ChildCare, MaterialTheme.colorScheme.primary, onNavigateToBreedingLog),
+        DashboardItem("Calving", Icons.Default.ChildFriendly, MaterialTheme.colorScheme.primary, onNavigateToCalvingLog),
+        DashboardItem("Weight", Icons.Default.MonitorWeight, MaterialTheme.colorScheme.primary, onNavigateToWeightLog),
+        DashboardItem("Expenses", Icons.Default.Payments, MaterialTheme.colorScheme.primary, onNavigateToExpenseLog),
+        DashboardItem("Sales", Icons.Default.Sell, MaterialTheme.colorScheme.primary, onNavigateToSalesLog),
+        DashboardItem("Inventory", Icons.Default.Inventory, MaterialTheme.colorScheme.primary, onNavigateToInventoryLog),
+        DashboardItem("Labor", Icons.Default.Groups, MaterialTheme.colorScheme.primary, onNavigateToLaborLog),
+        DashboardItem("Water", Icons.Default.WaterDrop, MaterialTheme.colorScheme.primary, onNavigateToWaterLog),
+        DashboardItem("Manure", Icons.Default.Agriculture, MaterialTheme.colorScheme.primary, onNavigateToManureLog),
+        DashboardItem("Daily Diary", Icons.Default.Book, MaterialTheme.colorScheme.primary, onNavigateToDiaryLog),
+        DashboardItem("Daily Tasks", Icons.AutoMirrored.Filled.Assignment, MaterialTheme.colorScheme.primary, onNavigateToDailyTaskLog),
+        DashboardItem("Movement", Icons.Default.TransferWithinAStation, MaterialTheme.colorScheme.primary, onNavigateToMovementLog),
+        DashboardItem("Vet Visit", Icons.Default.LocalHospital, MaterialTheme.colorScheme.primary, onNavigateToVetVisitLog),
+        DashboardItem("Deworming", Icons.Default.BugReport, MaterialTheme.colorScheme.primary, onNavigateToDewormingLog),
+        DashboardItem("Insurance", Icons.Default.VerifiedUser, MaterialTheme.colorScheme.primary, onNavigateToInsuranceLog),
+        DashboardItem("Milk Quality", Icons.Default.Grading, MaterialTheme.colorScheme.primary, onNavigateToMilkQualityLog),
+        DashboardItem("Collection", Icons.Default.ShoppingBasket, MaterialTheme.colorScheme.primary, onNavigateToMilkCollectionLog),
         DashboardItem("Veterinary Tips", Icons.Default.MedicalServices, MaterialTheme.colorScheme.primary, onNavigateToTips)
     )
 
